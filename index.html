@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maitri Shah Profile</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Maitri Shah.jpg" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav> 
+            <div class="header-text">
+                <p>Sports Management Professional</p>
+                <h1>Hi, I'm <span>Maitri</span><br>Shah from India!</h1>
+                <p>I am avid fan of various sports like<br>Formula 1, Football, and Athletics</p>
+            </div>  
+        </div>
+    </div>
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Maitri-photo.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1> 
+                <p>As a dedicated sports management professional, I bring a dynamic blend of skills
+                    and a passion for the business of sports. With a proven track record in the industry, I
+                    have honed my expertise in areas such as event coordination, operational efficiency,
+                    and strategic planning. My goal is to contribute to the growth and success of sports
+                    organizations by leveraging my comprehensive understanding of the industry,
+                    coupled with strong analytical, organizational, and interpersonal skills.</p> 
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>  
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Technical Skills</span><br>Adobe Photoshop<br>MS Office Suite<br>HTML/CSS</li>
+                        <li><span>Soft Skills</span><br>Leadership Skills<br>Interpersonal Skills<br>Communication Skills</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span> Nov 2021 - Jul 2023</span><br>Sports Operations Associate at Dream11</li>
+                        <li><span>Feb 2021 - March 2021</span><br>Hospitality Manager at Road Safety World Series</li>
+                        <li><span>Jan 2020 - Jul 2020</span><br>Traffic and Presentation Intern at Disney Star</li>
+                        <li><span>Mar 2019 - May 2019</span><br>Operations Intern at Indian Premier League</li>
+
+                    </ul>
+                </div><div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - 2025</span><br>MSc International Sport and Event Management<br>KEDGE Business School, France</li>
+                        <li><span>2017 - 2020</span><br>Bachelor in Sports Management<br>International Institute of Sports Management</li>
+                    </ul>
+                </div>
+          
+            </div>
+    </div>
+</div>
+
+<!---------contact------>
+<div id="contact">
+    <div class="contact-info">
+        <h1>Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>maitri05679@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i>+33 783919053</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/maitri_8/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/maitri.shah.75685/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/shahmaitrihitesh/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+ </body>
+</html>
